@@ -1,0 +1,22 @@
+{
+  "name": "webserver-socketio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "socketio.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "serve-index": "^1.7.2",
+    "socket.io": "^1.4.4"
+  },
+  "devDependencies": {
+    "express": "^4.13.3",
+    "serve-index": "^1.7.2",
+    "socket.io": "^1.4.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node socketio.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

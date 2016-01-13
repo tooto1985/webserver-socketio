@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="socket.io.js"></script>
+	<script>
+		var start = 0;
+		var socket = io();
+		socket.on("serversend",function(msg) {
+			$("body").append("<div>" + msg + "</div>");
+			setTimeout(function() {
+				socket.emit("clientsend",msg);
+			},1000);
+		});
+		socket.emit("clientsend",start);
+	</script>
+</head>
+<body>
+	Hello
+</body>
+</html>
